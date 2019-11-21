@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+</head>
+<body>
+<form th:action="@{importExcel}" method="post" enctype="multipart/form-data">
+    <input type="file" name="textFile">
+    <input type="submit">
+</form>
+
+<form th:action="@{export}" method="post">
+    <input type="submit" value="导出">
+</form>
+</body>
+</html>
